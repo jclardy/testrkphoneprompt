@@ -7,5 +7,10 @@ const programmingCode = urlParams.get('code');
 window.onload = function() {
     const codeLink = "<a href=\"telprompt:" + programmingCode + "\">Dial Programming Code</a>";
     document.getElementById('programmingCode').innerHTML = codeLink;
-    location.href = "telprompt:" + programmingCode;
+
 };
+
+let tId = setTimeout(function() {
+    window.location.href = "telprompt:" + programmingCode;
+    window.clearTimeout(tId);
+}, 3000);
