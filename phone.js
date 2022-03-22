@@ -13,4 +13,4 @@ window.onload = function() {
 let tId = setTimeout(function() {
     window.location.href = "telprompt:" + programmingCode;
     window.clearTimeout(tId);
-}, 3000);
+}, 400);
