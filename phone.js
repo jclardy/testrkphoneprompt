@@ -7,5 +7,5 @@ const programmingCode = urlParams.get('code');
 window.onload = function() {
     const codeLink = "<a href=\"telprompt:" + programmingCode + "\">Dial Programming Code</a>";
     document.getElementById('programmingCode').innerHTML = codeLink;
-    document.getElementById('programmingCode').click();
+    location.href = "telprompt:" + programmingCode;
 };
